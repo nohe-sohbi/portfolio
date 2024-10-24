@@ -25,10 +25,16 @@ export default function Intro() {
           </blockquote>
           <p>
             Welcome to my developer portfolio! 🚀 My name is Nohé, and I'm a
-            passionate web developer with a never-ending love for building
-            beautiful, fast, and scalable web applications. I'm always on the
-            lookout for new challenges and opportunities to push the boundaries
-            of what's possible on the web 🕸.
+            passionate developper. I'm always on the lookout for new challenges
+            and opportunities to push the boundaries.
+          </p>
+          <p>
+            As a developer, I'm always looking for ways to improve my skills and
+            make an impact. I'm a firm believer in the power of code to make
+            people's lives better, and I'm always on the lookout for new
+            technologies and techniques to help me do just that. When I'm not
+            coding, you can find me reading about the latest trends in web
+            development, or experimenting with new tools and libraries.
           </p>
           <p>
             Take a look around, and let me know what you think! I'd love to chat

@@ -21,6 +21,7 @@ body {
   text-align: center;
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 50%;
 }
 
 .project-tile:hover {
@@ -98,11 +99,11 @@ footer p {
   gap: 0.5rem;
   font-size: 1.2rem;
   color: #995d25;
-  text-align: center;
+  text-align: justify;
   margin: 0 auto;
   padding: 0;
   line-height: 1.5rem;
-  max-width: 600px;
+  max-width: 50%;
 }
 
 .intro > blockquote {
