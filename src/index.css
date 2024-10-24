@@ -20,6 +20,7 @@ body {
   margin: 10px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .project-tile:hover {
@@ -87,6 +88,30 @@ footer p {
   margin: 0;
 }
 
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  color: #995d25;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.5rem;
+  max-width: 600px;
+}
+
+.intro > blockquote {
+  font-style: italic;
+  font-weight: 650;
+  color: #e0993c;
+  font-size: 1rem;
+}
+
 footer a {
   text-decoration: none;
 }
@@ -111,6 +136,12 @@ footer a:hover {
   }
 
   .nav-element {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
   }
 }
