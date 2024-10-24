@@ -32,7 +32,7 @@ const ProjectsData: Project[] = [
       "src/assets/technologies/HTML5.png",
       "src/assets/technologies/CSS3.png",
     ],
-    links: "Project 2 links",
+    links: "src/assets/websites/crypter.png",
     image: "src/assets/websites/crypter.png",
     size: "100%",
   },
@@ -45,7 +45,7 @@ const ProjectsData: Project[] = [
       "src/assets/technologies/HTML5.png",
       "src/assets/technologies/CSS3.png",
     ],
-    links: "Project 3 links",
+    links: "src/assets/websites/asyncnode.png",
     image: "src/assets/websites/asyncnode.png",
     size: "100%",
   },
@@ -59,7 +59,7 @@ const ProjectsData: Project[] = [
       "src/assets/technologies/HTML5.png",
       "src/assets/technologies/CSS3.png",
     ],
-    links: "Project 4 links",
+    links: "src/assets/websites/mon-petit-cadeau.png",
     image: "src/assets/websites/mon-petit-cadeau.png",
   },
   {
@@ -72,7 +72,7 @@ const ProjectsData: Project[] = [
       "src/assets/technologies/HTML5.png",
       "src/assets/technologies/CSS3.png",
     ],
-    links: "Project 5 links",
+    links: "src/assets/websites/snagency.png",
     image: "src/assets/websites/snagency.png",
   },
   {
@@ -85,6 +85,7 @@ const ProjectsData: Project[] = [
       "src/assets/technologies/HTML5.png",
       "src/assets/technologies/CSS3.png",
     ],
+    links: "src/assets/websites/elite-cheaters.png",
     image: "src/assets/websites/elite-cheaters.png",
   },
 ];
