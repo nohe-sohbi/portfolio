@@ -25,8 +25,7 @@ export default function ProjectTile(data: Project) {
             alt={data.name}
             style={{
               objectFit: "cover",
-              width: 300,
-              height: 300,
+              width: "100%",
               borderRadius: 10,
               border: "1px solid #995d25",
               cursor: "pointer",
