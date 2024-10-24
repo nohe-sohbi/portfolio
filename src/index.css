@@ -145,4 +145,8 @@ footer a:hover {
     align-items: center;
     gap: 25px;
   }
+
+  .intro {
+    max-width: 90%;
+  }
 }
