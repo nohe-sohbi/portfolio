@@ -17,15 +17,16 @@ export default function ProjectTile(data: Project) {
         </div>
         <hr />
 
-        <p>{data.description}</p>
+        <p className="text-description">{data.description}</p>
 
         {data.image && (
           <img
+            className="image-description"
             src={data.image}
             alt={data.name}
             style={{
               objectFit: "cover",
-              width: "100%",
+              width: "80%",
               borderRadius: 10,
               border: "1px solid #995d25",
               cursor: "pointer",

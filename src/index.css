@@ -48,7 +48,7 @@ body {
 
 .technologies {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
 }
 
@@ -123,6 +123,11 @@ footer a:hover {
 .project-tile > hr {
   width: 80%;
 }
+
+.text-description {width: 80%;
+  text-align: justify;
+  justify-content: center;
+  margin: 0px auto 10px;
 
 @media (max-width: 1024px) {
   .project-tile {
