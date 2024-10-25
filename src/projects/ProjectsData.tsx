@@ -11,7 +11,7 @@ const ProjectsData: Project[] = [
   {
     name: "Go Techniques",
     description:
-      "Website who can generate quotes based on the clients request for Geotechnical services.",
+      "An innovative web platform streamlining the process of obtaining geotechnical service quotes. Developed with a focus on user experience, this solution enables clients to receive comprehensive quotes from multiple providers through an automated system, significantly reducing the time and effort typically required in the quotation process.",
     technologies: [
       "src/assets/technologies/PHP.png",
       "src/assets/technologies/MySQL.png",
@@ -25,7 +25,7 @@ const ProjectsData: Project[] = [
   {
     name: "Fuzion",
     description:
-      "Web builder for making an executable binded into another executable with custom parameters.",
+      "A sophisticated web-based executable builder offering advanced customization capabilities for software development. This tool streamlines the process of creating bound executables with custom parameters, featuring an intuitive interface and robust security measures to ensure reliable application deployment.",
     technologies: [
       "src/assets/technologies/PHP.png",
       "src/assets/technologies/CSHARP.png",
@@ -39,7 +39,7 @@ const ProjectsData: Project[] = [
   {
     name: "AsyncNode",
     description:
-      "Single page website to provide custom web developpement prestations for customers.",
+      "A modern, responsive single-page application showcasing professional web development services. Built with performance and user experience in mind, this platform demonstrates technical expertise while maintaining elegant design principles and seamless navigation.",
     technologies: [
       "src/assets/technologies/PHP.png",
       "src/assets/technologies/HTML5.png",
@@ -52,7 +52,7 @@ const ProjectsData: Project[] = [
   {
     name: "Mon petit cadeau",
     description:
-      "Custom project to provide guessing game to customers who doesn't have gift ideas.",
+      "An interactive gift recommendation platform utilizing intelligent algorithms to solve the challenge of gift selection. This innovative solution guides users through an engaging question-based journey to discover perfect gift ideas, making the gift-giving process both fun and efficient.",
     technologies: [
       "src/assets/technologies/PHP.png",
       "src/assets/technologies/MySQL.png",
@@ -65,7 +65,7 @@ const ProjectsData: Project[] = [
   {
     name: "SNAgency",
     description:
-      "SMMA agency website specialised in google ads management campaigns.",
+      "A professional SMMA agency website specializing in Google Ads campaign management. This platform showcases comprehensive digital marketing services, featuring detailed analytics, campaign optimization strategies, and proven results to help businesses maximize their advertising ROI.",
     technologies: [
       "src/assets/technologies/PHP.png",
       "src/assets/technologies/MySQL.png",
@@ -78,7 +78,7 @@ const ProjectsData: Project[] = [
   {
     name: "Elite-Cheaters",
     description:
-      "Aside project to sell custom cheating softwares for different games.",
+      "A specialized platform developed for gaming enthusiasts, offering custom software solutions for various gaming applications. This project demonstrates advanced software development capabilities while maintaining secure user authentication and seamless payment processing.",
     technologies: [
       "src/assets/technologies/PHP.png",
       "src/assets/technologies/MySQL.png",
