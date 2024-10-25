@@ -20,23 +20,7 @@ export default function ProjectTile(data: Project) {
         <p className="text-description">{data.description}</p>
 
         {data.image && (
-          <img
-            className="image-description"
-            src={data.image}
-            alt={data.name}
-            style={{
-              objectFit: "cover",
-              width: "80%",
-              borderRadius: 10,
-              border: "1px solid #995d25",
-              cursor: "pointer",
-              transition: "all 0.2s ease-in-out",
-              textAlign: "center",
-              display: "block",
-              margin: "0 auto",
-              marginBottom: "10px",
-            }}
-          />
+          <img className="image-description" src={data.image} alt={data.name} />
         )}
       </div>
     </>

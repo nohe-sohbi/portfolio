@@ -65,7 +65,7 @@ const ProjectsData: Project[] = [
   {
     name: "SNAgency",
     description:
-      "A professional SMMA agency website specializing in Google Ads campaign management. This platform showcases comprehensive digital marketing services, featuring detailed analytics, campaign optimization strategies, and proven results to help businesses maximize their advertising ROI.",
+      "A professional SMMA agency website specializing in Google Ads campaign management. This platform showcases comprehensive digital marketing services, featuring detailed campaign optimization strategies, and proven results to help businesses maximize their advertising ROI.",
     technologies: [
       "src/assets/technologies/PHP.png",
       "src/assets/technologies/MySQL.png",

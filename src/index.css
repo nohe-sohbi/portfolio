@@ -1,3 +1,10 @@
+/* Main Content */
+body {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   color: #995d25;
   max-width: 1440px;
@@ -5,53 +12,45 @@ body {
   font-weight: 400;
   font-style: normal;
   margin: 0 auto;
+  max-width: 50%;
+}
+/* Toolbox
+
+#main-app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: last baseline;
 }
 
-.project-tile {
+#toolbox {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 10px;
-  border: 1px solid #995d25;
-  border-radius: 15px;
-  background-color: #fff9f6;
-  border-color: #995d25;
-  margin: 10px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  width: 50%;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  width: 50px;
 }
 
-.project-tile:hover {
+#toolbox:hover {
   background: linear-gradient(135deg, #f0f0f0 0%, #e0993c 100%);
   color: #995d25;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  transform: scale(1.02);
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: pointer;
 }
 
-.project-tile > img {
-  border-radius: 15px;
-}
+#toolbox > h1 {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e0993c;
+  padding: 0.5rem;
+} */
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.project-image {
-  border-radius: 15px;
-  object-fit: contain;
-}
-
-.technologies {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-}
-
+/* Header - Navigation */
 nav {
   display: flex;
   justify-content: space-around;
@@ -71,22 +70,7 @@ nav {
   transform: scale(1.1);
 }
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-
-footer p {
-  margin: 0;
-}
+/* Intro Content */
 
 .intro {
   display: flex;
@@ -102,7 +86,6 @@ footer p {
   margin: 0 auto;
   padding: 0;
   line-height: 1.5rem;
-  max-width: 50%;
 }
 
 .intro > blockquote {
@@ -112,16 +95,106 @@ footer p {
   font-size: 1rem;
 }
 
+/* Project Tiles */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px auto 10px;
+}
+
+.project-image {
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #995d25;
+  border-radius: 15px;
+  background-color: #fff9f6;
+  border-color: #995d25;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 45%;
+}
+
+.project-tile > hr {
+  width: 80%;
+}
+
+.project-tile:hover {
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0993c 100%);
+  color: #995d25;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Project - Images */
+
+.project-tile > img {
+  border-radius: 15px;
+  width: 80%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.image-description {
+  display: block;
+  padding: 0.2rem;
+  background-color: #fff9f6;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 80%;
+  border: 1px solid #995d25;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.image-description:hover {
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0993c 100%);
+  color: #995d25;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+  transition: all 0.25s cubic-bezier(1, -0.55, 0.265, 1.55);
+}
+
+.technologies {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0;
+}
+
 footer a {
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
-}
-
-.project-tile > hr {
-  width: 80%;
 }
 
 .text-description {
@@ -148,12 +221,19 @@ hr:hover {
 }
 
 @media (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+
   .project-tile {
     width: 45%;
   }
 }
 
 @media (max-width: 768px) {
+  body {
+    max-width: 100%;
+  }
   .project-tile {
     width: 100%;
   }
