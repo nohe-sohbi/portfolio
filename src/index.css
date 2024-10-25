@@ -124,10 +124,12 @@ footer a:hover {
   width: 80%;
 }
 
-.text-description {width: 80%;
+.text-description {
+  width: 80%;
   text-align: justify;
   justify-content: center;
   margin: 0px auto 10px;
+}
 
 @media (max-width: 1024px) {
   .project-tile {
