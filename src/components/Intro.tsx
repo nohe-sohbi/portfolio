@@ -24,22 +24,24 @@ export default function Intro() {
             </em>
           </blockquote>
           <p>
-            Welcome to my developer portfolio! 🚀 My name is Nohé, and I'm a
-            passionate developper. I'm always on the lookout for new challenges
-            and opportunities to push the boundaries.
+            Welcome! I’m Nohé, and I bring big ideas to life through code 💡✨.
+            Driven by curiosity and fueled by coffee, I’m all about crafting
+            digital experiences that inspire, connect, and make an impact. Let’s
+            create something unforgettable!
+          </p>
+
+          <p>
+            My passion for development is grounded in the belief that technology
+            can make life simpler, smarter, and more connected. Each project I
+            undertake is an opportunity to refine my skills and deliver
+            innovative solutions. I'm excited by the endless potential of modern
+            tools and languages, and I thrive on bringing ideas to life with a
+            commitment to quality and creativity.
           </p>
           <p>
-            As a developer, I'm always looking for ways to improve my skills and
-            make an impact. I'm a firm believer in the power of code to make
-            people's lives better, and I'm always on the lookout for new
-            technologies and techniques to help me do just that. When I'm not
-            coding, you can find me reading about the latest trends in web
-            development, or experimenting with new tools and libraries.
-          </p>
-          <p>
-            Take a look around, and let me know what you think! I'd love to chat
-            with you about any of the projects you see here, or just about web
-            development in general.
+            Feel free to explore my work! Whether you'd like to discuss a
+            project, share insights on web development, or just connect, I'd
+            love to hear from you. Let's build something remarkable together.
           </p>
         </div>
       </div>
