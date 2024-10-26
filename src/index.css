@@ -1,8 +1,5 @@
 /* Main Content */
 body {
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -13,7 +10,38 @@ body {
   font-style: normal;
   margin: 0 auto;
   max-width: 50%;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background-color: #fff9f6;
 }
+
+/* Container for fixed images */
+.fixed-images {
+  position: relative;
+}
+
+/* Image styling */
+.image-top-right,
+.image-bottom-left {
+  position: fixed;
+  width: 20vw; /* Adjust this to control the relative size */
+  height: auto; /* Keeps the aspect ratio */
+  max-width: 200px; /* Limits the size on larger screens */
+}
+
+/* Top-right image styling */
+.image-top-right {
+  top: 20px;
+  right: 20px;
+}
+
+/* Bottom-left image styling */
+.image-bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
 /* Toolbox
 
 #main-app {
@@ -227,6 +255,11 @@ hr:hover {
 
   .project-tile {
     width: 45%;
+  }
+
+  .image-top-right,
+  .image-bottom-left {
+    display: none;
   }
 }
 
