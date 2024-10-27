@@ -9,7 +9,7 @@ body {
   font-weight: 400;
   font-style: normal;
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 45%;
   scroll-behavior: smooth;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -139,6 +139,7 @@ nav {
 
 .project-tile {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 10px;
   padding: 10px;
@@ -151,6 +152,7 @@ nav {
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   width: 45%;
+  min-width: 260px;
 }
 
 .project-tile > hr {
