@@ -11,7 +11,7 @@ function App() {
       <div id="main-app">
         <div className="smooth-scroll">
           <img
-            src="src/assets/pc.png"
+            src="/pc.png"
             alt="Top Right Image"
             className="image-top-right"
           />
@@ -19,7 +19,7 @@ function App() {
           <Intro />
           <Portfolio projects={ProjectsData} />
           <img
-            src="src/assets/clavier.png"
+            src="/clavier.png"
             alt="Bottom Left Image"
             className="image-bottom-left"
           />
