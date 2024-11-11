@@ -6,5 +6,25 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 5173,
+    hmr: {
+      overlay: false,
+    },
+  },
+  build: {
+    outDir: "dist",
+    sourcemap: true,
+    lib: {
+      entry: "src/main.ts",
+      fileName: "my-lib",
+      formats: ["es", "cjs"],
+    },
+    rollupOptions: {
+      external: ["react"],
+      output: {
+        globals: {
+          react: "React",
+        },
+      },
+    },
   },
 });
