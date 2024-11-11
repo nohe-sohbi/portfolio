@@ -8,4 +8,4 @@ services:
       - .:/app
     stdin_open: true
     tty: true
-    command: sh -c "npm install && npm run dev -- --host --port 5173"
+    command: sh -c "npm install && npm run prod -- --host --port 5173"
