@@ -14,7 +14,7 @@ export default defineConfig({
     outDir: "dist",
     sourcemap: true,
     lib: {
-      entry: "src/main.ts",
+      entry: "src/main.tsx",
       fileName: "my-lib",
       formats: ["es", "cjs"],
     },
