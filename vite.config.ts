@@ -13,18 +13,5 @@ export default defineConfig({
   build: {
     outDir: "dist",
     sourcemap: true,
-    lib: {
-      entry: "src/main.tsx",
-      fileName: "my-lib",
-      formats: ["es", "cjs"],
-    },
-    rollupOptions: {
-      external: ["react"],
-      output: {
-        globals: {
-          react: "React",
-        },
-      },
-    },
   },
 });
