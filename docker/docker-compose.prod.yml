@@ -3,7 +3,7 @@ services:
   react-frontend:
     build:
       context: ../
-      dockerfile: docker/Dockerfile.prod
+      dockerfile: Dockerfile.react-frontend.prod
     ports:
       - "4173:4173"
     volumes:
