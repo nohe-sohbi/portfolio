@@ -1,0 +1,16 @@
+services:
+  # Front service
+  react-frontend:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile.prod
+    ports:
+      - "4173:4173"
+    volumes:
+      - ../webfront/:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
+
+networks:
+  default:
