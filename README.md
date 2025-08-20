@@ -1,5 +1,11 @@
 # Portfolio
 
+## Visual Lib 
+
+### Visual
+
+- Common Lib are not that pretty, gonna make my own.
+
 ## Launching Locally
 ### DEV
 
