@@ -10,7 +10,7 @@ export function Portfolio({ projects }: PortfolioProps) {
     <div>
       <div className="projects">
         {projects.map((project) => (
-          <ProjectTile {...project} />
+          <ProjectTile key={project.name} {...project} />
         ))}
       </div>
     </div>

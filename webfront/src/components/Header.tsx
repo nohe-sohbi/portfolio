@@ -2,11 +2,11 @@ export default function Header() {
   return (
     <>
       <header>
-        <title>Portfolio</title>
         <nav>
           <div className="nav-element">
             <a
               href="mailto:nohe@sohbi.dev"
+              aria-label="Send email to nohe@sohbi.dev"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -36,6 +36,8 @@ export default function Header() {
             <a
               href="https://github.com/nohe-sohbi"
               target="_blank"
+              aria-label="Visit GitHub profile"
+              rel="noopener noreferrer"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -64,6 +66,8 @@ export default function Header() {
             <a
               href="https://www.linkedin.com/in/nohe-sohbi/"
               target="_blank"
+              aria-label="Visit LinkedIn profile"
+              rel="noopener noreferrer"
               style={{
                 display: "flex",
                 alignItems: "center",

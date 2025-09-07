@@ -10,9 +10,11 @@ export default function ProjectTile(data: Project) {
         <h2>{data.name}</h2>
         <div className="technologies">
           {Array.isArray(data.technologies) ? (
-            data.technologies.map((t: string) => <img src={t} width={30} />)
+            data.technologies.map((t: string, index: number) => (
+              <img key={`${data.name}-tech-${index}`} src={t} width={30} alt={`Technology ${index + 1}`} />
+            ))
           ) : (
-            <img src={data.technologies} />
+            <img src={data.technologies} alt="Technology" />
           )}
         </div>
         <hr />
