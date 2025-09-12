@@ -1,8 +1,14 @@
+import { useTypingAnimation, useScrollAnimation } from '../hooks/useAnimations';
+
 export default function Intro() {
+  const quote = "The web is a canvas, and code is the brush that brings our imagination to life. But the true art is not in the code itself, but in the way we choose to wield it.";
+  const { displayedText } = useTypingAnimation(quote, 30);
+  const { ref: introRef, isVisible } = useScrollAnimation({ threshold: 0.2 });
   return (
     <>
       <div>
         <h1
+          className={`animate-scale-in ${isVisible ? 'animation-delay-100' : ''}`}
           style={{
             fontSize: "4rem",
             fontWeight: 700,
@@ -15,22 +21,20 @@ export default function Intro() {
         >
           Portfolio
         </h1>
-        <div className="intro">
+        <div ref={introRef as React.RefObject<HTMLDivElement>} className={`intro ${isVisible ? 'animate-fade-in-up' : ''}`}>
           <blockquote>
             <em>
-              “The web is a canvas, and code is the brush that brings our
-              imagination to life. But the true art is not in the code itself,
-              but in the way we choose to wield it.”
+              {displayedText}<span className="typing-cursor"></span>
             </em>
           </blockquote>
-          <p>
-            Welcome! I’m Nohé, and I bring big ideas to life through code 💡✨.
-            Driven by curiosity and fueled by coffee, I’m all about crafting
-            digital experiences that inspire, connect, and make an impact. Let’s
+          <p className={`animate-on-scroll ${isVisible ? 'visible animation-delay-200' : ''}`}>
+            Welcome! I'm Nohé, and I bring big ideas to life through code 💡✨.
+            Driven by curiosity and fueled by coffee, I'm all about crafting
+            digital experiences that inspire, connect, and make an impact. Let's
             create something unforgettable!
           </p>
 
-          <p>
+          <p className={`animate-on-scroll ${isVisible ? 'visible animation-delay-300' : ''}`}>
             My passion for development is grounded in the belief that technology
             can make life simpler, smarter, and more connected. Each project I
             undertake is an opportunity to refine my skills and deliver
@@ -38,7 +42,7 @@ export default function Intro() {
             tools and languages, and I thrive on bringing ideas to life with a
             commitment to quality and creativity.
           </p>
-          <p>
+          <p className={`animate-on-scroll ${isVisible ? 'visible animation-delay-400' : ''}`}>
             Feel free to explore my work! Whether you'd like to discuss a
             project, share insights on web development, or just connect, I'd
             love to hear from you. Let's build something remarkable together.
