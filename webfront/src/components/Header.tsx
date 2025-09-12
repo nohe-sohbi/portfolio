@@ -1,9 +1,15 @@
+import { useScrollAnimation } from '../hooks/useAnimations';
+
 export default function Header() {
+  const { ref: headerRef, isVisible } = useScrollAnimation({ 
+    threshold: 0.8, 
+    triggerOnce: true 
+  });
   return (
     <>
       <header>
-        <nav>
-          <div className="nav-element">
+        <nav ref={headerRef as React.RefObject<HTMLElement>}>
+          <div className={`nav-element animate-on-scroll ${isVisible ? 'visible animation-delay-100' : ''}`}>
             <a
               href="mailto:nohe@sohbi.dev"
               aria-label="Send email to nohe@sohbi.dev"
@@ -32,7 +38,7 @@ export default function Header() {
               &nbsp;<div>nohe@sohbi.dev</div>
             </a>
           </div>
-          <div className="nav-element">
+          <div className={`nav-element animate-on-scroll ${isVisible ? 'visible animation-delay-200' : ''}`}>
             <a
               href="https://github.com/nohe-sohbi"
               target="_blank"
@@ -62,7 +68,7 @@ export default function Header() {
               &nbsp;<div>Github</div>
             </a>
           </div>
-          <div className="nav-element">
+          <div className={`nav-element animate-on-scroll ${isVisible ? 'visible animation-delay-300' : ''}`}>
             <a
               href="https://www.linkedin.com/in/nohe-sohbi/"
               target="_blank"
